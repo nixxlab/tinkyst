@@ -2,6 +2,7 @@ export default {
   accounts: 'Счета',
   api_token: 'Токен API',
   app_name: 'Тинькист',
+  app_version: 'v0.0.1',
   bonds: 'Облигации',
   bonds_market: 'Рынок облигаций',
   currencies: 'Валюты',

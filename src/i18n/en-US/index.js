@@ -2,6 +2,7 @@ export default {
   accounts: 'Accounts',
   api_token: 'API Token',
   app_name: 'Tinkyst',
+  app_version: 'v0.0.1',
   bonds: 'Bonds',
   bonds_market: 'Bonds market',
   currencies: 'Currencies',
