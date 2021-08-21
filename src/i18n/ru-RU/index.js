@@ -19,8 +19,10 @@ export default {
   page_not_found: 'Нет такой страницы',
   pc: 'шт.',
   save: 'Сохранить',
+  settings: 'Настройки',
   shares_market: 'Рынок акций',
   spot_account: 'Брокерский счёт',
   summary_info: 'Суммарная информация',
   use: 'Использовать',
+  wrong_token: 'Токен указан неверно',
 }

@@ -19,8 +19,10 @@ export default {
   page_not_found: 'Page not found',
   pc: 'pc.',
   save: 'Save',
+  settings: 'Settings',
   shares_market: 'Stock market',
   spot_account: 'Spot account',
   summary_info: 'Summary information',
   use: 'Use',
+  wrong_token: 'Token is wrong',
 }
