@@ -4,6 +4,9 @@
 
 * [Русский](README.RU.md)
 
+### Current status
+
+* Preparing github repository of the project
 ### Install dependencies
 ```bash
 yarn
