@@ -1,4 +1,4 @@
-# Invetment profile analysis based on Tinkoff Investment platform Open API
+# Investment profile analysis based on Tinkoff Investment platform Open API
 
 ### The same in another languages
 
