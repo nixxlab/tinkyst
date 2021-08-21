@@ -6,6 +6,7 @@
   "author": "NIXXLAB <nixxlab@gmail.com>",
   "private": true,
   "scripts": {
+    "build-icons": "icongenie generate -m spa -i src/assets/logo.png",
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0"
   },
