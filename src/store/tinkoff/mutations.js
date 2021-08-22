@@ -17,6 +17,11 @@ export function bonds (state, value) {
   LocalStorage.set('bonds', value)
 }
 
+export async function clear (state) {
+  LocalStorage.clear()
+  state = {}
+}
+
 export function currencies (state, value) {
   state.currencies = value
   LocalStorage.set('currencies', value)

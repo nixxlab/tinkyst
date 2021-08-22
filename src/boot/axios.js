@@ -15,7 +15,7 @@ export default boot(({ app, router, store }) => {
   app.config.globalProperties.$api = api
 
   api.interceptors.request.use(function (params) {
-    Loading.show()
+    if (params.spinner !== false) { Loading.show() }
     return params
   })
 
