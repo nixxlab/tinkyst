@@ -19,5 +19,5 @@ quasar dev
 
 ### Additional information
 
-* Tinkof Investment platform [Open API](https://tinkoffcreditsystems.github.io/invest-openapi/)
+* Tinkoff Investment platform [Open API](https://tinkoffcreditsystems.github.io/invest-openapi/)
 * [Quasar](https://quasar.dev/) framework based on [VueJS](https://v3.vuejs.org/)
