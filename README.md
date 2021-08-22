@@ -6,7 +6,7 @@
 
 ### Current status
 
-* Preparing github repository of the project
+* Making basic features
 ### Install dependencies
 ```bash
 yarn
