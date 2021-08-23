@@ -1,5 +1,5 @@
 <template>
-  <q-page class="column fit q-gutter-md q-pa-md">
+  <q-page class="column fit q-gutter-md q-pa-md" style="max-width: 1000px">
     <div class="text-h3">{{ $t('portfolio_capital') }}</div>
 
     <q-markup-table flat>
