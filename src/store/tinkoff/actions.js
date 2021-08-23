@@ -49,6 +49,22 @@ export function get_currencies ({ commit }, options) {
   })
 }
 
+export function get_eur_price ({ commit }, options) {
+  return api.get('/market/orderbook', {params: {figi: 'BBG0013HJJ31', depth: 1}, ...options})
+  .then(response => {
+    commit('eur_price', response.lastPrice)
+    return response.lastPrice  
+  })
+}
+
+export function get_usd_price ({ commit }, options) {
+  return api.get('/market/orderbook', {params: {figi: 'BBG0013HGFT4', depth: 1}, ...options})
+  .then(response => {
+    commit('usd_price', response.lastPrice)
+    return response.lastPrice  
+  })
+}
+
 export function get_funds ({ commit }, options) {
   return api.get('/market/etfs', options)
   .then(response => {

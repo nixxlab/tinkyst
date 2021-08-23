@@ -1,4 +1,5 @@
 export default {
+  about_app: 'О проекте',
   accounts: 'Счета',
   api_token: 'Токен API',
   app_name: 'Тинкист',
@@ -9,6 +10,7 @@ export default {
   currencies_market: 'Валютный рынок',
   data_loaded: 'Загружены данные',
   error: 'Ошибка',
+  exchange_rate: 'Курс обмена',
   funds: 'ПИФы',
   funds_market: 'Рынок ПИФов',
   go_back: 'Вернуться',
@@ -19,6 +21,8 @@ export default {
   no_token: 'Токен не указан',
   page_not_found: 'Нет такой страницы',
   pc: 'шт.',
+  portfolio_capital: 'Состояние в портфеле',
+  price: 'Цена',
   save: 'Сохранить',
   settings: 'Настройки',
   shares_market: 'Рынок акций',

@@ -56,6 +56,24 @@
             </q-item-label>
           </q-item-section>
         </q-item>
+        
+        <q-item>
+          <q-item-section>
+            <q-item-label>{{ $t('exchange_rate') }} ₽/€</q-item-label>
+            <q-item-label caption>
+              {{ eur_price }}
+            </q-item-label>
+          </q-item-section>
+        </q-item>
+        
+        <q-item>
+          <q-item-section>
+            <q-item-label>{{ $t('exchange_rate') }} ₽/$</q-item-label>
+            <q-item-label caption>
+              {{ usd_price }}
+            </q-item-label>
+          </q-item-section>
+        </q-item>
       </q-list>
     </div>
   </q-page>
@@ -77,8 +95,10 @@
       const api_token_verification = ref(null)
       const bonds = ref(store.getters['tinkoff/bonds'])
       const currencies = ref(store.getters['tinkoff/currencies'])
+      const eur_price = ref(store.getters['tinkoff/eur_price'])
       const funds = ref(store.getters['tinkoff/funds'])
       const shares = ref(store.getters['tinkoff/shares'])
+      const usd_price = ref(store.getters['tinkoff/usd_price'])
 
       const settings_validation = computed(() => {
         if (!api_token.value) { return i18n.t('no_token') }
@@ -113,13 +133,23 @@
           store.dispatch('tinkoff/get_shares', { spinner: false }).then(_ => {
             shares.value = store.getters['tinkoff/shares']
           })        
+          
+          store.dispatch('tinkoff/get_eur_price', { spinner: false }).then(_ => {
+            eur_price.value = store.getters['tinkoff/eur_price']
+          })        
+          
+          store.dispatch('tinkoff/get_usd_price', { spinner: false }).then(_ => {
+            usd_price.value = store.getters['tinkoff/usd_price']
+          })        
         }).catch(error => {
           api_token_verification.value = false
           accounts.value = null
           bonds.value = null
           currencies.value = null
+          eur_price,value = null
           funds.value = null
           shares.value = null
+          usd_price.value = null
           store.commit('tinkoff/clear')
         })
       }
@@ -132,7 +162,7 @@
         }
       }
 
-      return { accounts, api_token, api_token_sent, api_token_verification, bonds, currencies, funds, settings_validation, shares, update_settings }
+      return { accounts, api_token, api_token_sent, api_token_verification, bonds, currencies, eur_price, funds, settings_validation, shares, update_settings, usd_price }
     }
   });
 </script>

@@ -27,6 +27,11 @@ export function currencies (state, value) {
   LocalStorage.set('currencies', value)
 }
 
+export function eur_price (state, value) {
+  state.eur_price = value
+  LocalStorage.set('eur_price', value)
+}
+
 export function funds (state, value) {
   state.funds = value
   LocalStorage.set('funds', value)
@@ -37,3 +42,7 @@ export function shares (state, value) {
   LocalStorage.set('shares', value)
 }
 
+export function usd_price (state, value) {
+  state.usd_price = value
+  LocalStorage.set('usd_price', value)
+}
