@@ -7,6 +7,13 @@
       <q-item-section>{{ $t('portfolio_capital') }}</q-item-section>
     </q-item>
 
+    <q-item clickable tag="a" to="/dividends">
+      <q-item-section avatar>
+        <q-icon color="primary" name="space_dashboard" />
+      </q-item-section>
+      <q-item-section>{{ $t('dividends') }}</q-item-section>
+    </q-item>
+
     <q-item clickable tag="a" to="/settings">
       <q-item-section avatar>
         <q-icon color="primary" name="settings" />
