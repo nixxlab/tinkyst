@@ -4,6 +4,10 @@
 
 * [Русский](README.RU.md)
 
+### Github Pages
+
+This project is accessible as SPA (single page application) on Github Pages by the link https://nixxlab.github.io/tinkyst/
+
 ### Current status
 
 * Making basic features
