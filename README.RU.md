@@ -6,7 +6,7 @@
 
 ### Github Pages
 
-Проект скомпилирован в виде SPA (одностраничное веб-приложение) и доступен на Github Pages по адресу https://nixxlab.github.io/tinkyst/
+Проект скомпилирован в виде SPA (одностраничное веб-приложение) и доступен на Github Pages [по адресу](https://nixxlab.github.io/tinkyst/)
 
 ### Текущий статус
 
